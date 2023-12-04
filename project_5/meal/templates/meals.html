@@ -7,7 +7,10 @@
     <div class="card col" >
         <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h3>{{i.strCategory}}</h3>
+          <div class="row align-items-baseline">
+            <h3 class="col-1">{{i.idCategory}}</h3>
+            <h3 class="col-8">{{i.strCategory}}</h3>
+          </div>
           <p class="card-text">{{ i.strCategoryDescription|truncatewords:10}}</p>
         </div>
       </div>
