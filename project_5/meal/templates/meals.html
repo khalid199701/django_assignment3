@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row container p-5 m-auto row-cols-4 gap-5">
+    {% for i in d %}
+    <div class="card col" >
+        <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>{{i.strCategory}}</h3>
+          <p class="card-text">{{ i.strCategoryDescription|truncatewords:10}}</p>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+{% endblock content %}

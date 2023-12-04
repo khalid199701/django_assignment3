@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row container align-items-center m-auto">
+    <div class="col-6 align-items-center">
+        <h1>Welcome to our Restaurant</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="col-6">
+        <img src="{% static 'Django_restaurant.jpg' %}" />
+    </div>
+</div>
+{% endblock content %}
